@@ -50,6 +50,18 @@ class TestCount(unittest.TestCase):
 
   def test_14(self):
     self.assertEqual(-1, self.res.summ(-5, 100))
+    
+  def test_15(self):
+    self.assertEqual(-1, self.res.summ(-5, 6))
+    
+  def test_16(self):
+    self.assertEqual(-1, self.res.summ(6, -5))
+    
+  def test_17(self):
+    self.assertEqual(-1, self.res.summ(6, 100))
+    
+  def test_18(self):
+    self.assertEqual(-1, self.res.summ(100, 6))
 
 if __name__ == "__main__":
   unittest.main()
